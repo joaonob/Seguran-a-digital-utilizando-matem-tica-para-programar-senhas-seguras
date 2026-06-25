@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurePass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>SecurePass</h1>
+        <p class="descricao">
+            Gere senhas seguras e personalizadas em segundos.
+        </p>
+
+        <div class="senha-box">
+            <input type="text" id="senha" readonly>
+            <button id="copiar">Copiar</button>
+        </div>
+
+        <div class="controle">
+            <label>Tamanho da senha: <span id="valor-tamanho">12</span></label>
+            <input type="range" id="tamanho" min="4" max="32" value="12">
+        </div>
+
+        <div class="opcoes">
+            <label><input type="checkbox" id="maiusculas" checked> Maiúsculas</label>
+
+            <label><input type="checkbox" id="minusculas" checked> Minúsculas</label>
+
+            <label><input type="checkbox" id="numeros" checked> Números</label>
+
+            <label><input type="checkbox" id="simbolos"> Símbolos</label>
+        </div>
+
+        <div class="forca-container">
+            <div id="barra-forca"></div>
+        </div>
+
+        <p id="nivel-forca">Força: Média</p>
+
+        <button id="gerar">Gerar Nova Senha</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
